@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --FF: "Poppins", sans-serif;
+  --BG-COLOR: linear-gradient(375deg, #1cc7d0, #2ede98);
+  --PRIMARY-COLOR: #1cc7d0;
+}
+
+html,
+body {
+  font-family: var(--FF);
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: var(--BG-COLOR);
+}
+
+ul {
+  display: flex;
+}
+
+/* === 3D FLIP CARD === */
+.wrapper {
+  height: 400px;
+  width: 320px;
+  position: relative;
+  perspective: 1200px;
+  cursor: pointer;
+}
+
+.wrapper .card {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Front Face */
+.front-face {
+  background: #fff;
+  transform: rotateY(0deg);
+}
+
+.front-face img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Back Face */
+.back-face {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #fff;
+  transform: rotateY(180deg);
+}
+
+.back-face img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 5px;
+  background: var(--BG-COLOR);
+}
+
+/* Hover Effect */
+.wrapper:hover .front-face {
+  transform: rotateY(-180deg);
+}
+
+.wrapper:hover .back-face {
+  transform: rotateY(0deg);
+}
+
+/* Info & Social Icons */
+.back-face .info {
+  text-align: center;
+}
+
+.back-face .info .title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.back-face ul li {
+  list-style: none;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  margin: 0 5px;
+  border: 2px solid var(--PRIMARY-COLOR);
+  border-radius: 50%;
+  background: var(--BG-COLOR);
+  transition: all 0.4s ease;
+}
+
+.back-face ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+/* Social Hover */
+.back-face ul li:hover {
+  background: transparent;
+  border-color: var(--PRIMARY-COLOR);
+}
+
+.back-face ul li:hover a {
+  color: var(--PRIMARY-COLOR);
+}
