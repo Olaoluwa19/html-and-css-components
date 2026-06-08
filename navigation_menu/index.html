@@ -12,23 +12,29 @@
 
 <body>
     <nav class="nav">
-        <ul class="nav__ul">
-            <li class="icons home">
-                <i class="fa-solid fa-house"></i>Home
-            </li>
-            <li class="icons blog">
-                <i class="fa-solid fa-blog"></i>Blog
-            </li>
-            <li class="icons code">
-                <i class="fa-solid fa-code"></i>Code
-            </li>
-            <li class="icons help">
-                <i class="fa-solid fa-envelope"></i>Help
-            </li>
-            <li class="icons user">
-                <i class="fa-solid fa-user"></i>About
-            </li>
-        </ul>
+        <input type="radio" name="slider" class="home" id="home" checked>
+        <input type="radio" name="slider" class="blog" id="blog">
+        <input type="radio" name="slider" class="code" id="code">
+        <input type="radio" name="slider" class="help" id="help">
+        <input type="radio" name="slider" class="about" id="about">
+        <div class="nav-container">
+            <div class="slider"></div>
+            <label for="home" class="icon home">
+                <i class="fa-solid fa-house"></i>&nbsp;Home
+            </label>
+            <label for="blog" class="icon blog">
+                <i class="fa-solid fa-blog"></i>&nbsp;Blog
+            </label>
+            <label for="code" class="icon code">
+                <i class="fa-solid fa-code"></i>&nbsp;Code
+            </label>
+            <label for="help" class="icon help">
+                <i class="fa-solid fa-envelope"></i>&nbsp;Help
+            </label>
+            <label for="about" class="icon about">
+                <i class="fa-solid fa-user"></i>&nbsp;About
+            </label>
+        </div>
     </nav>
 </body>
 

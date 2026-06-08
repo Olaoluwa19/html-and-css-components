@@ -10,7 +10,8 @@
 /* VARIABLES */
 :root {
   --FF: "Poppins", sans-serif;
-  --ALT-COLOR: red;
+  --FONT-COLOR: #8e44ad;
+  --ALT-COLOR: rgba(142, 68, 173, 0.3);
   --PRIMARY-COLOR: #fff;
   --BG-COLOR: #f2f2f2;
   --BUTTON-COLOR: #111;
@@ -24,19 +25,14 @@ body {
   display: grid;
   height: 100vh;
   width: 100%;
-  place-items: center;
+  place-content: center;
   background: var(--BG-COLOR);
 }
-ul {
+
+.nav .nav-container {
   display: flex;
-  align-items: center;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-.nav .nav__ul {
+  text-align: center;
+  position: relative;
   width: 600px;
   height: 60px;
   border-radius: 5px;
@@ -44,13 +40,55 @@ ul li {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-.nav__ul .icons {
+.nav-container .icon {
   width: 100%;
   height: 100%;
   line-height: 60px;
   font-size: 18px;
   font-weight: 400;
-  background: red;
   border-radius: 5px;
   margin: 0 5px;
+  color: var(--FONT-COLOR);
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-container .icon:hover {
+  background: var(--ALT-COLOR);
+}
+
+.slider {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  background: var(--FONT-COLOR);
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.home:checked ~ .nav-container .home,
+.blog:checked ~ .nav-container .blog,
+.code:checked ~ .nav-container .code,
+.help:checked ~ .nav-container .help,
+.about:checked ~ .nav-container .about {
+  color: var(--PRIMARY-COLOR);
+}
+
+.blog:checked ~ .nav-container .slider {
+  left: 20%;
+}
+
+.code:checked ~ .nav-container .slider {
+  left: 40%;
+}
+
+.help:checked ~ .nav-container .slider {
+  left: 60%;
+}
+
+.about:checked ~ .nav-container .slider {
+  left: 80%;
 }
