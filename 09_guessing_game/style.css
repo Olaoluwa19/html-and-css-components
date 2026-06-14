@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --FF: "Poppins", sans-serif;
+  --FONT-COLOR: #333;
+  --ALT-COLOR: #aaa;
+  --PRIMARY-COLOR: #fff;
+  --BG-COLOR: #4a98f7;
+  --BUTTON-COLOR: #111;
+  --GRADIENT: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  --GRADIENT-REVERSE: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+}
+
+body {
+  font-family: var(--FF);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--BG-COLOR);
+  color: var(--FONT-COLOR);
+}
+
+.wrapper {
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: var(--PRIMARY-COLOR);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.wrapper form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.wrapper form input,
+.wrapper form button {
+  font: inherit;
+  font-size: 18px;
+  height: 50px;
+  width: calc(100% / 2 - 20px);
+  outline: none;
+  padding: 0 20px;
+  border-radius: 8px;
+}
+
+.wrapper form input {
+  text-align: center;
+  font-size: 18px;
+  color: #707070;
+  border: 1px solid var(--ALT-COLOR);
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.wrapper form button {
+  border: none;
+  background-color: var(--BG-COLOR);
+  color: var(--PRIMARY-COLOR);
+  cursor: pointer;
+  width: 110px;
+  transition: 0.3s;
+}
+
+.wrapper form button:active {
+  transform: scale(0.98);
+}
