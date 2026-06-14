@@ -71,6 +71,10 @@ input::-webkit-outer-spin-button {
   display: none;
 }
 
+.wrapper form input:disabled {
+  cursor: not-allowed;
+}
+
 .wrapper form button {
   border: none;
   background-color: var(--BG-COLOR);
