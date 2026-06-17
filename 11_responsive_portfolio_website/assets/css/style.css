@@ -1,24 +1,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
+/* VARIABLES */
+:root {
+  --HEADER-HEIGHT: 3rem;
+  /* =========== Colors ========= */
+  --HUE-COLOR: 250; /* Purple 250 - Green 142 - Blue 230 - Pink 340  */
+
+  /* HSL color mode */
+  --FIRST-COLOR: hsl(var(--HUE-COLOR), 69%, 61%);
+  --FIRST-COLOR-SECOND: hsl(var(--HUE-COLOR), 69%, 61%);
+  --FIRST-COLOR-ALT: hsl(var(--HUE-COLOR), 57%, 53%);
+  --FIRST-COLOR-LIGHTER: hsl(var(--HUE-COLOR), 92%, 85%);
+  --TITLE-COLOR: hsl(var(--HUE-COLOR), 8%, 15%);
+  --TEXT-COLOR: hsl(var(--HUE-COLOR), 8%, 45%);
+  --TEXT-COLOR-LIGHT: hsl(var(--HUE-COLOR), 8%, 65%);
+  --INPUT-COLOR: hsl(var(--HUE-COLOR), 70%, 96%);
+  --BODY-COLOR: hsl(var(--HUE-COLOR), 60%, 99%);
+  --CONTAINER-COLOR: #fff;
+
+  /* ======== Font and Typography ======== */
+  --BODY-FONT: "Poppins", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ..... */
+  --BIG-FONT-SIZE: 2rem;
+  --H1-FONT-SIZE: 1.5rem;
+  --H2-FONT-SIZE: 1.25rem;
+  --H3-FONT-SIZE: 1.125rem;
+  --NORMAL-FONT-SIZE: 0.938rem;
+  --SMALL-FONT-SIZE: 0.813rem;
+  --SMALLER-FONT-SIZE: 0.75rem;
+
+  /* ======== Font weight =========  */
+  --FONT-MEDIUM: 500;
+  --FONT-SEMI-BOLD: 600;
+
+  /*  ========Margin Bottom ======= */
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px .... */
+
+  --MB-0-25: 0.25rem;
+  --MB-0-5: 0.5rem;
+  --MB-0-75: 0.75rem;
+  --MB-1: 1rem;
+  --MB-1-5: 1.5rem;
+  --MB-2: 2rem;
+  --MB-2-5: 2.5rem;
+  --MB-3: 3rem;
+
+  /*  ======== Z Index ======== */
+  --Z-TOOLTIP: 9;
+  --Z-FIXED: 99;
+  --Z-MODAL: 999;
+}
+
+/*  Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --BIG-FONT-SIZE: 3rem;
+    --H1-FONT-SIZE: 2.25rem;
+    --H2-FONT-SIZE: 1.5rem;
+    --H3-FONT-SIZE: 1.25rem;
+    --NORMAL-FONT-SIZE: 1rem;
+    --SMALL-FONT-SIZE: 0.875rem;
+    --SMALLER-FONT-SIZE: 0.813rem;
+  }
+}
+
+/* ============ BASE ========== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* VARIABLES */
-:root {
-  --FF: "Poppins", sans-serif;
-  --FONT-COLOR: #111;
-  --ALT-COLOR: #2980b9;
-  --PRIMARY-COLOR: #fff;
-  --BG-COLOR: grey;
-  --BUTTON-COLOR: #111;
-  --WARNING-COLOR: #f23b26;
+html {
+  scroll-behavior: smooth;
 }
 
-html,
 body {
-  font-family: var(--FF);
-  color: var(--FONT-COLOR);
+  margin: 0 0 var(--HEADER-HEIGHT) 0;
+  font-family: var(--BODY-FONT);
+  font-size: var(--NORMAL-FONT-SIZE);
+  background-color: var(--BODY-COLOR);
+  color: var(--TEXT-COLOR);
 }
