@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --FF: "Poppins", sans-serif;
+  --FONT-COLOR: #808080;
+  --ALT-COLOR: lightgrey;
+  --PRIMARY-COLOR: #fff;
+  --BG-COLOR: #0069d9;
+  --BUTTON-COLOR: #d9d9d9;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-content: center;
+  /* background-color: var(--BG-COLOR); */
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.options-group {
+  height: 100px;
+  width: 400px;
+  background: var(--PRIMARY-COLOR);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  border: 1px solid var(--BG-COLOR);
+  border-radius: 8px;
+  gap: 15px;
+}
+
+.option {
+  flex: 1;
+  height: 100%;
+  background-color: var(--PRIMARY-COLOR);
+  border: 2px solid var(--ALT-COLOR);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--FONT-COLOR);
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hide the default radio button */
+.option input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+/* Style the custom circle */
+.option i {
+  font-size: 24px;
+  color: var(--ALT-COLOR);
+  transition: all 0.3s ease;
+}
+
+/* Active / Checked State */
+.option:has(input:checked) {
+  background-color: var(--BG-COLOR);
+  border-color: var(--BG-COLOR);
+  color: white;
+}
+
+.option:has(input:checked) i {
+  color: white;
+}
+
+/* Optional: Change icon to filled circle when checked */
+.option:has(input:checked) i {
+  content: "\f058"; /* fa-circle-check */
+  /* Or keep fa-circle and change color only */
+}
