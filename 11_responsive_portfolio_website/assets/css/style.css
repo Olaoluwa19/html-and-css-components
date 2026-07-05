@@ -470,3 +470,65 @@ img {
   display: block;
   background-color: var(--FIRST-COLOR);
 }
+
+.skills__html {
+  width: 90%;
+}
+
+.skills__css {
+  width: 95%;
+}
+
+.skills__js {
+  width: 80%;
+}
+
+.skills__react {
+  width: 92%;
+}
+
+.skills__node {
+  width: 95%;
+}
+
+.skills__mongo {
+  width: 90%;
+}
+
+.skills__express {
+  width: 95%;
+}
+
+.skills__postgres {
+  width: 80%;
+}
+
+.skills__docker {
+  width: 90%;
+}
+
+.skills__nginx {
+  width: 80%;
+}
+
+.skills__aws {
+  width: 80%;
+}
+
+.skills__pm2 {
+  width: 90%;
+}
+
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__open .skills__list {
+  height: max-content;
+  margin-bottom: var(--MB-2-5);
+}
+
+.skills__open .skills__arrow {
+  transform: rotate(-180deg);
+}
