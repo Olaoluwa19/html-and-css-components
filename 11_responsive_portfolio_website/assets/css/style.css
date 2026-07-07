@@ -113,6 +113,11 @@ img {
 }
 
 /* ======== RE-USABLE CSS CLASSES ======== */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
 .section {
   padding: 2rem 0 4rem;
 }
