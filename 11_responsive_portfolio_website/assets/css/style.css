@@ -112,6 +112,10 @@ img {
   height: auto;
 }
 
+button {
+  font: inherit;
+}
+
 /* ======== RE-USABLE CSS CLASSES ======== */
 .offscreen {
   position: absolute;
@@ -546,9 +550,13 @@ img {
 }
 
 .qualification__button {
+  padding: 0 0.75rem;
+  border: 2px solid var(--FIRST-COLOR-LIGHTER);
+  border-radius: 1.25rem;
   font-size: var(--H3-FONT-SIZE);
   font-weight: var(--FONT-MEDIUM);
   cursor: pointer;
+  color: var(--TEXT-COLOR);
 }
 
 .qualification__icon {
@@ -600,4 +608,8 @@ img {
 
 .qualification__active[data-content] {
   display: block;
+}
+
+.qualification__button.qualification__active {
+  color: var(--FIRST-COLOR);
 }
