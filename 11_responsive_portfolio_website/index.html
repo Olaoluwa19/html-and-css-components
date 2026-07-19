@@ -7,11 +7,15 @@
     <title>Responsive Portfolio website</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- ======== SWIPER ======== -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <script defer src="assets/js/swiper-bundle.min.js"></script>
+
     <script type="module" src="assets/js/main.js"></script>
 </head>
 
 <body>
-    <!-- -------- HEADER ---------- -->
+    <!-- ======== HEADER =========== -->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">Olaoluwa</a>
@@ -596,8 +600,218 @@
 
             </ul>
         </section>
-    </main>
 
+        <!-- ========== PORTFOLIO SECTION ============ -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <p class="section__subtitle">Most recent work</p>
+
+            <div class="portfolio__container container swiper mySwiper">
+                <ul class="swiper-wrapper">
+                    <!-- ========== PORTFOLIO 1============ -->
+                    <li class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/sample_placeholder_2.jpg" alt="Portfolio image" class="portfolio__img">
+                        <article class="portfolio__data">
+                            <h3 class="portfolio__title">Mordern Website</h3>
+                            <p class="portfolio__description">Website adaptable to all device and animated interation.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </article>
+                    </li>
+
+                    <!-- ========== PORTFOLIO 2============ -->
+                    <li class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/sample_placeholder_3.jpg" alt="Portfolio image" class="portfolio__img">
+                        <article class="portfolio__data">
+                            <h3 class="portfolio__title">TechNote</h3>
+                            <p class="portfolio__description">Allows you to assign note to staff's for task completion.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </article>
+                    </li>
+
+                    <!-- ========== PORTFOLIO 3============ -->
+                    <li class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/sample_placeholder_1.jpg" alt="Portfolio image" class="portfolio__img">
+                        <article class="portfolio__data">
+                            <h3 class="portfolio__title">Medical health app.</h3>
+                            <p class="portfolio__description">Allows you to book an appointment with a doctor online.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+
+                <!-- Slider Arrows -->
+                <div class="swiper-button-next">
+                    <!-- <i class="uil uil-angle-right-b swiper-portfolio-icon"></i> -->
+                </div>
+                <div class="swiper-button-prev">
+                    <!-- <i class="uil uil-angle-left-b swiper-portfolio-icon"></i> -->
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- ========== PROJECT IN MIND SECTION ========== -->
+        <section class="project section">
+            <h2 class="offscreen">These are the projects I have in mind.</h2>
+            <ul class="project__bg">
+                <li class="project__container container grid">
+                    <article class="project__data">
+                        <h2 class="project__title">You have a new project?</h2>
+                        <p class="project__description">Contact me now and get a 30% discount</p>
+                        <a href="#contact" class="button button--flex button--white">Contact me
+                            <i class="uil uil-message project__icon button__icon"></i>
+                        </a>
+                    </article>
+                    <img src="assets/img/profile_img_no_bg.png" alt="Display image" class="project__img">
+                </li>
+            </ul>
+        </section>
+
+        <!-- ========= TESTIMONIAL SECTION =========== -->
+        <section class="testimonial section">
+            <h2 class="section__title">Testimonial</h2>
+            <p class="section__subtitle">What client are saying:</p>
+
+            <div class="testimonial__container container swiper mySwiper">
+                <ul class="swiper-wrapper">
+                    <!-- =========== TESTIMONIAL 1 ========== -->
+                    <li class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <figure class="testimonial__header">
+                                <img src="assets/img/happy__client__6_328x336.jpg" width="328" height="336" alt=""
+                                    class="testimonial__img">
+                                <figcaption>
+                                    <h3 class="testimonial__name">Sofia Smith</h3>
+                                    <p class="testimonial__client">Client</p>
+                                </figcaption>
+                            </figure>
+
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <blockquote class="testimonial__description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Aut aspernatur harum nostrum assumenda necessitatibus dignissimos aperiam
+                                eveniet
+                                accusantium dolor adipisci inventore exercitationem fugiat velit, officia ex culpa
+                                architecto dolorum incidunt.</p>
+                        </blockquote>
+                    </li>
+
+                    <!-- =========== TESTIMONIAL 2 ========== -->
+                    <li class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <figure class="testimonial__header">
+                                <img src="assets/img/happy__client__4_334x359.jpg" width="334" height="359" alt=""
+                                    class="testimonial__img">
+                                <figcaption>
+                                    <h3 class="testimonial__name">John Doe</h3>
+                                    <p class="testimonial__client">Client</p>
+                                </figcaption>
+                            </figure>
+
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <blockquote class="testimonial__description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Aut aspernatur harum nostrum assumenda necessitatibus dignissimos aperiam
+                                eveniet
+                                accusantium dolor adipisci inventore exercitationem fugiat velit, officia ex culpa
+                                architecto dolorum incidunt.</p>
+                        </blockquote>
+                    </li>
+
+                    <!-- =========== TESTIMONIAL 3 ========== -->
+                    <li class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <figure class="testimonial__header">
+                                <img src="assets/img/happy__client__5_333x361.jpg" width="333" height="361" alt=""
+                                    class="testimonial__img">
+
+                                <figcaption>
+                                    <h3 class="testimonial__name">Jane Doe</h3>
+                                    <p class="testimonial__client">Client</p>
+                                </figcaption>
+                            </figure>
+
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <blockquote class="testimonial__description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Aut aspernatur harum nostrum assumenda necessitatibus dignissimos aperiam
+                                eveniet
+                                accusantium dolor adipisci inventore exercitationem fugiat velit, officia ex culpa
+                                architecto dolorum incidunt.</p>
+                        </blockquote>
+                    </li>
+                </ul>
+                <!-- pagination -->
+                <div class="swiper-pagination swiper-pagination-testimonial"></div>
+            </div>
+        </section>
+
+        <!-- ========= CONTACT ME ========= -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <p class="section__subtitle">Get in touch</p>
+
+            <div class="contact__container container grid">
+                <ul>
+                    <li class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+                        <p class="contact__title">Call my <a href="tel:+2349067759137">line</a></p>
+                    </li>
+                    <li class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+                        <p class="contact__title">Send me an <a href="mailto:oluwadurotimioladapo@gmail.com">email</>
+                        </p>
+                    </li>
+                    <li class="contact__information contact__icon">
+                        <i class="uil uil-map-marker contact__icon"></i>
+                        <p class="contact__title">Location: <a
+                                href="https://www.google.com/maps/search/?api=1&query=Ikeja,+Lagos,+Nigeria"
+                                target="_blank" rel="noopener noreferrer">
+                                Ikeja, Lagos, Nigeria
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
