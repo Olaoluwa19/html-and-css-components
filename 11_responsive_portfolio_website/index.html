@@ -792,23 +792,53 @@
                 <ul>
                     <li class="contact__information">
                         <i class="uil uil-phone contact__icon"></i>
-                        <p class="contact__title">Call my <a href="tel:+2349067759137">line</a></p>
+                        <p class="contact__title">Call my <a class="contact__subtitle"
+                                href="tel:+2349067759137">line</a></p>
                     </li>
                     <li class="contact__information">
                         <i class="uil uil-envelope contact__icon"></i>
-                        <p class="contact__title">Send me an <a href="mailto:oluwadurotimioladapo@gmail.com">email</>
+                        <p class="contact__title">Send me an <a class="contact__subtitle"
+                                href="mailto:oluwadurotimioladapo@gmail.com">email</a>
                         </p>
                     </li>
-                    <li class="contact__information contact__icon">
+                    <li class="contact__information">
                         <i class="uil uil-map-marker contact__icon"></i>
-                        <p class="contact__title">Location: <a
+                        <p class="contact__title">
+                            <a class="contact__subtitle"
                                 href="https://www.google.com/maps/search/?api=1&query=Ikeja,+Lagos,+Nigeria"
                                 target="_blank" rel="noopener noreferrer">
-                                Ikeja, Lagos, Nigeria
+                                Location
                             </a>
                         </p>
                     </li>
                 </ul>
+
+                <form class="contact__form grid">
+                    <ul class="contact__inputs grid">
+                        <li class="contact__content">
+                            <label for="name" class="contact__label">Name</label>
+                            <input type="text" class="contact__input" id="name">
+                        </li>
+                        <li class="contact__content">
+                            <label for="email" class="contact__label">Email</label>
+                            <input type="email" class="contact__input" id="email">
+                        </li>
+                        <li class="contact__content">
+                            <label for="project" class="contact__label">Project</label>
+                            <input type="text" class="contact__input" id="project">
+                        </li>
+                        <li class="contact__content">
+                            <label for="message" class="contact__label">Message</label>
+                            <textarea name="message" id="message" class="contact__input" cols="30" rows="7"
+                                placeholder="Write your message here..."></textarea>
+                        </li>
+                        <li>
+                            <button type="button" class="button button--flex">Send message
+                                <i class="uil uil-message button__icon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </form>
             </div>
         </section>
     </main>

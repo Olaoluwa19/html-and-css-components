@@ -113,8 +113,13 @@ img {
 }
 
 button {
-  font: inherit;
   border: none;
+}
+
+label,
+input,
+button {
+  font: inherit;
 }
 
 /* ======== RE-USABLE CSS CLASSES ======== */
@@ -870,4 +875,76 @@ button {
 
 .swiper-container .swiper-pagination-testimonial {
   bottom: 0;
+}
+
+/* CONTACT ME */
+/* .contact__container {
+  row-gap: 3rem;
+} */
+
+.contact__information {
+  display: flex;
+  margin-bottom: var(--MB-0-75);
+  align-items: center;
+}
+
+.contact__icon {
+  font-size: 2rem;
+  color: var(--FIRST-COLOR);
+  margin-right: var(--MB-0-75);
+}
+
+.contact__information p {
+  font-size: var(--H3-FONT-SIZE);
+  margin: 0;
+}
+
+/* Contact Links */
+.contact__subtitle {
+  color: var(--FIRST-COLOR);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contact__subtitle:hover {
+  color: var(--FIRST-COLOR-ALT);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.contact__subtitle:active {
+  color: var(--FIRST-COLOR-ALT);
+  transform: translateY(1px);
+}
+
+.contact__subtitle:visited {
+  color: var(--FIRST-COLOR-ALT);
+}
+
+.contact__subtitle:visited:hover {
+  color: var(--FIRST-COLOR);
+}
+
+.contact__content {
+  background-color: var(--INPUT-COLOR);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.contact__label {
+  font-size: var(--SMALLER-FONT-SIZE);
+  color: var(--TITLE-COLOR);
+}
+
+.contact__input {
+  font: inherit;
+  width: 100%;
+  background-color: var(--INPUT-COLOR);
+  color: var(--TEXT-COLOR);
+  font-family: var(--BODY-FONT);
+  font-size: var(--NORMAL-FONT-SIZE);
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem 0.5rem 0;
 }
