@@ -121,6 +121,12 @@ nav {
   z-index: 11;
 }
 
+/* change navbar color on scroll using javaScript */
+.window-scroll {
+  background-color: var(--COLOR-PRIMARY);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
 .nav__container {
   height: 100%;
   display: flex;
@@ -184,6 +190,7 @@ header {
 /* ========= CATEGOTIES STYLING ========= */
 .categories {
   background-color: var(--COLOR-BG1);
+  height: 29rem;
 }
 
 .categories h1 {
@@ -221,4 +228,56 @@ header {
 
 .category:hover {
   box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.category:nth-child(2) .category__icon {
+  background-color: var(--COLOR-DANGER);
+}
+
+.category:nth-child(3) .category__icon {
+  background-color: var(--COLOR-SUCCESS);
+}
+
+.category:nth-child(4) .category__icon {
+  background-color: var(--COLOR-WARNING);
+}
+
+.category:nth-child(5) .category__icon {
+  background-color: var(--COLOR-SUCCESS);
+}
+
+.category__icon {
+  background: var(--COLOR-PRIMARY);
+  padding: 0.7rem;
+  border-radius: 0.9rem;
+}
+
+.category h3 {
+  margin: 2rem 0 1rem;
+}
+
+.category p {
+  font-size: 0.85rem;
+}
+
+/* ========= POPULAR COURSES ========= */
+.courses {
+  margin-top: 10rem;
+}
+
+.courses__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.course {
+  background-color: var(--COLOR-BG1);
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.course__info {
+  padding: 2rem;
 }
