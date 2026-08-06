@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Multipage Educational website</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="main.js"></script>
 
     <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
@@ -14,7 +15,7 @@
 <body>
     <!-- =========== NAVBAR =========== -->
     <nav>
-        <aside class="container nav__container">
+        <div class="container nav__container">
             <h4>
                 <a href="index.html">OLAOLUWA</a>
             </h4>
@@ -26,7 +27,7 @@
             </ul>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
-        </aside>
+        </div>
     </nav>
 
     <!-- =========== HEADER ============ -->
@@ -68,42 +69,77 @@
 
             <ul class="categories__right">
                 <li class="category">
-                    <span class="catgrgory__icon"><i class="uil uil-bitcoin-circle"></i></span>
+                    <span class="category__icon"><i class="uil uil-bitcoin-circle"></i></span>
                     <h3>Blockchain</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, a?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </li>
 
                 <li class="category">
-                    <span class="catgrgory__icon"><i class="uil uil-palette"></i></span>
+                    <span class="category__icon"><i class="uil uil-palette"></i></span>
                     <h3>Graphic Design</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, facilis.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                 </li>
 
                 <li class="category">
-                    <span class="catgrgory__icon"><i class="uil uil-usd-circle"></i></span>
+                    <span class="category__icon"><i class="uil uil-usd-circle"></i></span>
                     <h3>Finance</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, inventore?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
                 </li>
 
                 <li class="category">
-                    <span class="catgrgory__icon"><i class="uil uil-megaphone"></i></span>
+                    <span class="category__icon"><i class="uil uil-megaphone"></i></span>
                     <h3>Marketing</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, qui.</p>
                 </li>
 
                 <li class="category">
-                    <span class="catgrgory__icon"><i class="uil uil-music"></i></span>
+                    <span class="category__icon"><i class="uil uil-music"></i></span>
                     <h3>Music</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, repudiandae.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
                 </li>
 
                 <li class="category">
-                    <span class="catgrgory__icon"><i class="uil uil-puzzle-piece"></i></span>
+                    <span class="category__icon"><i class="uil uil-puzzle-piece"></i></span>
                     <h3>Business</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, pariatur!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </li>
             </ul>
         </div>
+    </section>
+
+    <section class="courses">
+        <h2>Our Popular Courses</h2>
+        <ul class="container courses__container">
+            <li class="course">
+                <figure class="course__image"><img src="images/sample_placeholder_1.jpg" alt=""></figure>
+                <article class="course__info">
+                    <h3>Fully Functional Healthcare Web App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ratione qui ipsum atque velit,
+                        explicabo saepe.</p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </article>
+            </li>
+
+            <li class="course">
+                <figure class="course__image"><img src="images/sample_placeholder_2.jpg" alt=""></figure>
+                <article class="course__info">
+                    <h3>Fully Fuctional Social Media site</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ratione qui ipsum atque velit,
+                        explicabo saepe.</p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </article>
+            </li>
+
+            <li class="course">
+                <figure class="course__image"><img src="images/sample_placeholder_3.jpg" alt=""></figure>
+                <article class="course__info">
+                    <h3>Fullstack TechNote Application</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ratione qui ipsum atque velit,
+                        explicabo saepe.</p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </article>
+            </li>
+        </ul>
     </section>
 </body>
 
