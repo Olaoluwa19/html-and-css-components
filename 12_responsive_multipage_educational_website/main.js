@@ -21,3 +21,13 @@ faqs.forEach((faq) => {
     }
   });
 });
+
+// SWIPERJS
+const testimonialSwiper = new Swiper(".testimonials__container", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
