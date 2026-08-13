@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Multipage Educational website</title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="main.js"></script>
 
     <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+
+    <!-- SWIPERJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <script type="module" src="main.js"></script>
 </head>
 
 <body>
@@ -187,10 +192,10 @@
     </section>
 
     <!--  ========== TESTIMONIAL SECTION ========== -->
-    <section class="container testimonials__container">
+    <section class="container testimonials__container swiper">
         <h2>Student's Testimonials</h2>
-        <ul>
-            <li class="testimonial">
+        <div class="swiper-wrapper">
+            <blockquote class="testimonial swiper-slide">
                 <figure class="avatar">
                     <img src="images/oladapo_placeholder_img_300x335.jpg" width="300" height="335" alt="">
 
@@ -199,13 +204,12 @@
                         <span class="title">Software Engineer</span>
                     </figcaption>
                 </figure>
-                <blockquote class="testimonial__body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime natus harum. Quidem,
-                        quaerat!</p>
-                </blockquote>
-            </li>
+                <p class="testimonial__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime natus
+                    harum. Quidem,
+                    quaerat!</p>
+            </blockquote>
 
-            <li class="testimonial">
+            <blockquote class="testimonial swiper-slide">
                 <figure class="avatar"><img src="images/female_muslim_placeholder_328x336.jpg" width="328" height="336"
                         alt="">
                     <figcaption class="testimonial__info">
@@ -213,13 +217,12 @@
                         <span class="title">Founder</span>
                     </figcaption>
                 </figure>
-                <blockquote class="testimonial__body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime natus harum. Quidem,
-                        quaerat!</p>
-                </blockquote>
-            </li>
+                <p class="testimonial__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime natus
+                    harum. Quidem,
+                    quaerat!</p>
+            </blockquote>
 
-            <li class="testimonial">
+            <blockquote class="testimonial swiper-slide">
                 <figure class="avatar"><img src="images/male_african_placeholder_4_334x359.jpg" width="334" height="359"
                         alt="">
                     <figcaption class="testimonial__info">
@@ -227,12 +230,38 @@
                         <span class="title">Business Owner</span>
                     </figcaption>
                 </figure>
-                <blockquote class="testimonial__body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime natus harum. Quidem,
-                        quaerat!</p>
-                </blockquote>
-            </li>
-        </ul>
+                <p class="testimonial__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime natus
+                    harum. Quidem,
+                    quaerat!</p>
+            </blockquote>
+
+            <blockquote class="testimonial swiper-slide">
+                <figure class="avatar"><img src="images/female_african_placeholder_333x361.jpg" width="333" height="361"
+                        alt="">
+                    <figcaption class="testimonial__info">
+                        Natasha Shakur <br>
+                        <span class="title">Boutique Owner</span>
+                    </figcaption>
+                </figure>
+                <p class="testimonial__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime natus
+                    harum. Quidem,
+                    quaerat!</p>
+            </blockquote>
+
+            <blockquote class="testimonial swiper-slide">
+                <figure class="avatar"><img src="images/white_guy_image_placeholder_389x338.jpg" width="389"
+                        height="338" alt="">
+                    <figcaption class="testimonial__info">
+                        Andrew Cole <br>
+                        <span class="title">Businessman</span>
+                    </figcaption>
+                </figure>
+                <p class="testimonial__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime natus
+                    harum. Quidem,
+                    quaerat!</p>
+            </blockquote>
+        </div>
+        <div class="swiper-pagination"></div>
     </section>
 </body>
 
