@@ -24,10 +24,16 @@ faqs.forEach((faq) => {
 
 // SWIPERJS
 const testimonialSwiper = new Swiper(".testimonials__container", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  // when window width is >= 600px
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
+    },
   },
 });
