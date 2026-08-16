@@ -486,17 +486,32 @@ footer ul li a:hover {
   .nav__menu li {
     width: 100%;
     height: 5.5rem;
-    animation: animateNavIcon 1s linear forwards;
+    animation: animateNavIcon 400ms linear forwards;
     transform-origin: top right;
+    opacity: 0;
+    transition: var(--TRANSITION);
+  }
+
+  .nav__menu li:nth-child(2) {
+    animation-delay: 200ms;
+  }
+
+  .nav__menu li:nth-child(3) {
+    animation-delay: 400ms;
+  }
+
+  .nav__menu li:nth-child(4) {
+    animation-delay: 600ms;
   }
 
   @keyframes animateNavIcon {
     0% {
-      transform: rotateZ(-90deg);
+      transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
     }
 
     100% {
-      transform: rotateZ(0);
+      transform: rotateZ(0) rotateX(0) scale(1);
+      opacity: 1;
     }
   }
 
